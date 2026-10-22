@@ -1,0 +1,51 @@
+Package: umg
+Type: Package
+Title: Unified Model Graphs for Statistical Models in Psychology
+Version: 0.6.1
+Authors@R: person(given = "Hsiu-Ting", family = "Yu",
+    email = "hsiutingyu@gmail.com", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-3668-8033"))
+Description: Constructs, validates, lays out, and renders Unified Model
+    Graphs (UMG), a formal graphical grammar for statistical models in
+    psychology. Vertices are typed by observability, support, and
+    inferential role; edges distinguish stochastic, symmetric,
+    deterministic, and mixing dependence; plates encode replication and
+    hierarchy. Diagrams can be themed and rendered with base 'grid'
+    graphics, with 'ggplot2', as 'TikZ' code, or as 'Graphviz' DOT, and
+    can be constructed either from one-line motif builders for many
+    model families or automatically from 'lavaan', 'lme4', 'mirt',
+    'blavaan', 'brms', 'OpenMx', and 'qgraph' model objects. A diagram
+    can be inspected as a data frame, summarised, and exported back to
+    'lavaan' model syntax, making the model-diagram correspondence
+    operational in both directions. Each diagram also exposes
+    identification diagnostics (scaling checks, a graphical counting
+    rule, and a d-separation reader) and generates the exploratory
+    display scaffolds implied by the model-data duality. The notation
+    builds on established results for graphical and structural equation
+    models: plate notation follows Buntine (1994) <doi:10.1613/jair.62>;
+    the counting rule and scaling checks follow Bollen (1989)
+    <doi:10.1002/9781118619179>; and the independence reader implements
+    the d-separation criterion of Geiger, Verma and Pearl (1990)
+    <doi:10.1002/net.3230200504> through the equivalent ancestral graph
+    criterion of Lauritzen, Dawid, Larsen and Leimer (1990)
+    <doi:10.1002/net.3230200503>.
+License: MIT + file LICENSE
+URL: https://hsiutingyu.github.io/umg/,
+        https://github.com/hsiutingyu/umg
+BugReports: https://github.com/hsiutingyu/umg/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: grid, grDevices, stats, tools, utils
+Suggests: lavaan, lme4, mirt, blavaan, brms, OpenMx, qgraph, ggplot2,
+        DiagrammeR, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2026-10-14 10:07:50 UTC; Hsiu-TingYu
+Author: Hsiu-Ting Yu [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3668-8033>)
+Maintainer: Hsiu-Ting Yu <hsiutingyu@gmail.com>
+Config/roxygen2/version: 8.1.0
+Repository: CRAN
+Date/Publication: 2026-10-22 16:10:02 UTC

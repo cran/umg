@@ -1,0 +1,20 @@
+citHeader("To cite the umg package in publications use:")
+
+# version read from DESCRIPTION at citation time
+vers <- {
+  if (exists("meta") && !is.null(meta$Version)) meta$Version
+  else as.character(utils::packageVersion("umg"))
+}
+
+bibentry(
+  bibtype  = "Manual",
+  title    = "umg: Unified Model Graphs for Statistical Models in Psychology",
+  author   = person(given = "Hsiu-Ting", family = "Yu"),
+  year     = "2026",
+  note     = paste("R package version", vers),
+  url      = "https://hsiutingyu.github.io/umg/",
+  textVersion = paste0(
+    "Yu, H.-T. (2026). umg: Unified Model Graphs for statistical models ",
+    "in psychology (R package version ", vers, "). ",
+    "https://hsiutingyu.github.io/umg/")
+)
